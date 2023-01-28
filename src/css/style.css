@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+
+    --font-main: 'Red Hat Display', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+
+    font-family: var(--font-main);
+    font-size: 16px;
+    background-image: linear-gradient( to bottom, hsla(225, 73%, 75%, 0.473), var(--Pale-blue));
+}
+
+.principal {
+    width: 450px;
+    height: 800px;
+    background-color: var(--Very-pale-blue);
+    margin: auto;
+
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+ /* container__descricao */
+
+.container__descricao {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.descricao__titulo {
+    margin: 2rem 0;
+    font-weight: 900;
+    font-size: 32px;
+    color: var(--Dark-blue);
+}
+
+.descricao__texto {
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+    line-height: 25px;
+}
+
+/* container__plano */
+
+.container__plano {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 80px;
+    margin: 0 auto 4rem;
+    padding: 1rem;
+
+    background-color: hsla(225, 100%, 94%, 0.473);
+    border-radius: 15px;
+}
+
+
+
+.container__plano-anual {
+    margin: 0 3rem 0 1rem ;
+}
+
+.container__plano-anual .plano__titulo {
+    font-weight: 700;
+    font-size: 18px;
+    padding: 5px 0;
+    color: var(--Dark-blue);
+}
+
+.container__plano-anual .plano__preco {
+    font-size: 17px;
+    color: var(--Desaturated-blue);
+}
+
+.plano__botao {
+    margin-left: 40px;
+    font-weight: 700;
+    font-size: 17px;
+
+    color: var(--Bright-blue);
+    text-decoration: underline;
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.plano__botao:hover {
+    text-decoration: none;
+    color: hsla(245, 75%, 52%, 0.61);
+}
+
+/*containe__pagamento*/
+
+.containe__pagamento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Payment {
+    width: 80%;
+    height: 70px;
+    margin-bottom: 4rem;
+
+    font-weight: 700;
+    font-size: 20px;
+
+    background-color: var(--Bright-blue);
+    color: var(--Very-pale-blue);
+    border-radius: 15px;
+    box-shadow: 5px 10px 15px hsla(245, 75%, 52%, 0.308);
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.Payment:hover {
+    background-color: hsla(245, 75%, 52%, 0.61);
+}
+
+.cancel {
+    font-weight: 700;
+    font-size: 20px;
+    background-color: var(--Very-pale-blue);
+    color: var(--Desaturated-blue);
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.cancel:hover {
+    color: var(--Dark-blue);
+}
+/* FOOTER */
+
+footer {
+    margin: 5px 0;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

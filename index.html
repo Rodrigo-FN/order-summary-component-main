@@ -4,34 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/style.css">
+    
   <title>Frontend Mentor | Order summary card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <main class="principal">
+    <section class="container">
+      <div class="container__img">
+        <img src="./src/images/illustration-hero.svg" alt="Illustration Hero">
+      </div>
 
-  Order Summary
+      <div class="container__descricao">
+        <h2 class="descricao__titulo">Order Summary</h2>
+        <p class="descricao__texto">You can now listen to millions of songs, audiobooks, and podcasts on any 
+          device anywhere you like!</p>
+      </div>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+      <div class="container__plano">
+        <img src="./src/images/icon-music.svg" alt="icon music" class="icon__music">
 
-  Annual Plan
-  $59.99/year
+        <div class="container__plano-anual">
+          <p class="plano__titulo">Annual Plan</p>
+          <p class="plano__preco">$59.99/year</p>
+        </div>
 
-  Change
+        <button class="plano__botao">Change</button>
+      </div>
 
-  Proceed to Payment
-  Cancel Order
+      <div class="containe__pagamento">
+        <button class="Payment">Proceed to Payment</button>
+        <button class="cancel">Cancel Order</button>
+      </div> 
+    </section>
+  </main>
+
   
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://www.linkedin.com/in/rodrigo-faria-000790263/" target="_blank">Rodrigo Faria</a>.
+  </footer>
 </body>
 </html>
